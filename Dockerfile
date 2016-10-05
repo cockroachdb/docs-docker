@@ -9,5 +9,3 @@ RUN apk -v --update add \
 	pip install --upgrade awscli s3cmd && \
 	apk -v --purge del py-pip && \
 	rm /var/cache/apk/*
-
-ENTRYPOINT ["/bin/sh", "-c"]
