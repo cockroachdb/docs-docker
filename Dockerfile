@@ -10,4 +10,4 @@ RUN apk -v --update add \
 	apk -v --purge del py-pip && \
 	rm /var/cache/apk/*
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/sh", "-c"]
