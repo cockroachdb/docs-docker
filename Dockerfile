@@ -5,7 +5,8 @@ RUN apk -v --update add \
 		less \
 		py-pip \
 		python \
+		python-dev \
 	&& \
 	pip install --upgrade awscli s3cmd && \
-	apk -v --purge del py-pip && \
+	apk -v --purge del py-pip python-dev && \
 	rm /var/cache/apk/*
