@@ -1,4 +1,4 @@
-FROM jekyll/builder
+FROM jekyll/jekyll
 
 RUN apk -v --update add \
 		groff \
